@@ -105,6 +105,7 @@ export default class MessageContainer extends React.PureComponent {
           contentContainerStyle={styles.contentContainerStyle}
           renderItem={this.renderRow}
           {...this.props.invertibleScrollViewProps}
+          {...this.props.listViewProps}
           ListFooterComponent={this.renderHeaderWrapper}
           ListHeaderComponent={this.renderFooter}
           {...this.props.listViewProps}
