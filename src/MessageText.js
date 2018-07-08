@@ -83,7 +83,7 @@ export default class MessageText extends React.Component {
     const rulesProps = Object.assign({}, { image: renderLightboxImage }, rules);
 
     return (
-      <Markdown style={style[this.props.position]} rules={rulesProps} {...restProps}>
+      <Markdown style={styles[this.props.position]} rules={rulesProps} {...restProps}>
         {this.props.currentMessage.text}
       </Markdown>
     );
